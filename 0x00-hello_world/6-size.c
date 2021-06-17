@@ -9,13 +9,13 @@ int main(void)
 char charType;
 int intType;
 double doubleType;
-double double doublexType;
+long double doublexType;
 float floatType;
 
-printf("size of a char:", sizeof(charType));
-printf("Size of a int:", sizeof(intType));
-printf("size of a long int:", sizeof(doubleType));
-printf("size of a long long int:", sizeof(doublexType));
-printf("size of a float:", sizeof(floatType));
+printf("size of a char:%zu byte\n", sizeof(charType));
+printf("Size of a int:%zu byte\n", sizeof(intType));
+printf("size of a long int:%zu byte\n", sizeof(doubleType));
+printf("size of a long long int:%zu byte\n", sizeof(doublexType));
+printf("size of a float:%zu byte\n", sizeof(floatType));
 return (0);
 }
