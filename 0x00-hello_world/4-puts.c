@@ -1,8 +1,9 @@
-include <stdio.h>
-//*puts replace printf
-//
-int main (void)
+#include<stdio.h>
+/**
+*puts replace printf
+*/
+int main(void)
 {
-puts("Programming is like building a multilingual puzzle \n");
+puts("\"Programming is like building a multilingual puzzle");
 return(0);
 }
