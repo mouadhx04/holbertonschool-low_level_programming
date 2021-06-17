@@ -8,7 +8,6 @@ int main(void)
 {
 char charType;
 int intType;
-float floatType;
 double doubleType;
 double double doublexType;
 float floatType;
