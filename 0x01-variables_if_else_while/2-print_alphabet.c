@@ -9,11 +9,9 @@
 int main(void)
 {
 char alpha = 'a';
-putchar("Alphabet in lowercase:\n");
-while(alpha <= 'z')
+if (alpha <= 'z')
 {
-putchar("%c ", alpha);
-alpha++;
+putchar("alphabet in lowercase\n", alpha);
 }
 return (0);
 }
