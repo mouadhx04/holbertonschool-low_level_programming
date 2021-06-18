@@ -8,10 +8,11 @@
  */
 int main(void)
 {
-char alpha = 'a';
-if (alpha <= 'z')
+char c;
+for (c = 'a' ; c <= 'z' ; c++)
 {
-putchar("alphabet in lowercase\n", alpha);
+putchar("alphabet in lowercase", c);
 }
+putchar("\n");
 return (0);
 }
