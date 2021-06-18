@@ -6,10 +6,10 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+int main (void)
 {
 char i;
-while ((i = 'a') && (i <= 'z') (i != 'q') && (i != 'e'))
+while((i = 'a') && (i <= 'z') (i != 'q') && (i != 'e'))
 {
 putchar(i);
 }
