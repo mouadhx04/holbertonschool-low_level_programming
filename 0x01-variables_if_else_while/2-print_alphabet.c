@@ -11,8 +11,8 @@ int main(void)
 char c;
 for (c = 'a' ; c <= 'z' ; c++)
 {
-putchar("alphabet in lowercase", c);
+putchar(c);
 }
-putchar("\n");
+putchar('\n');
 return (0);
 }
