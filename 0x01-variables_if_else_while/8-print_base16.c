@@ -11,9 +11,11 @@ int main(void)
 char i, j;
 for (i = 48; i <= 57; i++)
 {
-if (j = 'A' && j <='F')
+for (j = 'A'; j <='F'; j++)
+{
 putchar(i);
 putchar(j);
+}
 }
 putchar('\n');
 return (0);
