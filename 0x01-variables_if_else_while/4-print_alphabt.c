@@ -9,8 +9,9 @@
 int main(void)
 {
 char i;
-while((i = 'a') && (i <= 'z') && (i != 'q') && (i != 'e'))
+for((i = 'a') && (i <= 'z')
 {
+if(i != 'e' && i != 'q')
 putchar(i);
 }
 putchar('\n');
