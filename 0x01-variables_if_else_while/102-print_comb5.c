@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-int i;
+nt i;
 int j;
 int x;
 int s;
@@ -20,7 +20,7 @@ for (x = 48; x <= 57; x++)
 {
 for (s = 49; x <= 57; s++)
 {
-if (i > j)
+if (s > j)
 {
 putchar(i);
 putchar(j);
