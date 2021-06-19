@@ -20,18 +20,15 @@ for (x = 48; x <= 57; x++)
 {
 for (s = 49; x <= 57; s++)
 {
-if (s > j)
+if (j > 56)
 {
 putchar(i);
 putchar(j);
 putchar(' ');
 putchar(x);
 putchar(s);
-if (j < 56)
-{
 putchar(',');
 putchar(' ');
-}
 }
 }
 }
