@@ -22,7 +22,7 @@ if (j > i && x > j)
 putchar(i);
 putchar(j);
 putchar(x);
-if (i <= 55)
+if (i < 55)
 {
 putchar(',');
 putchar(' ');
