@@ -21,6 +21,7 @@ for (x = 48; x <= 57; x++)
 for (s = 49; x <= 57; s++)
 {
 if (i > j)
+{
 putchar(i);
 putchar(j);
 putchar(' ');
