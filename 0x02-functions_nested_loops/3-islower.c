@@ -7,10 +7,10 @@
  *
  * Returns 0 otherwise
  */
-int _islower(void)
+int _islower(int c)
 {
-int x;
 if (x >= 'a' && x <= 'z')
-_islower = 1;
+return (1);
+else
 return (0);
 }
