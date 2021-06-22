@@ -13,7 +13,7 @@ for (j = 48; j < 57; j++)
 for (i = 'a'; i <= 'z'; i++)
 {
 _putchar(i);
-_putchar('\n');
 }
+_putchar('\n');
 }
 }
