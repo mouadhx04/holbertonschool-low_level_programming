@@ -1,6 +1,4 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
+#include "HOLBERTON.H"
 /**
  * main - Entry point
  *
@@ -8,6 +6,6 @@
  */
 int main(void)
 {
-printf("Holberton");
+putchar('H');
 return (0);
 }
