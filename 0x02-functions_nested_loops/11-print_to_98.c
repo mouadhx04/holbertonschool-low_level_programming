@@ -1,8 +1,8 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * void print_to_98 - prints all natural numbers from n to 98
- *@x variable to use it in counting
+ *print_to_98 - prints all natural numbers from n to 98
+ *@x: variable to use it in counting
  *
  * Return: nothing
  */
