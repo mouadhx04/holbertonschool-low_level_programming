@@ -2,19 +2,19 @@
 #include <stdio.h>
 /**
  * void print_to_98 - prints all natural numbers from n to 98
- *
+ *@x variable to use it in counting
  *
  * Return: nothing
  */
-void print_to_98(int xv)
+void print_to_98(int x)
 {
-	while (xv != 98)
+	while (x != 98)
 	{
-		printf("%i, ", xv);
-		if (xv > 98)
-			xv--;
+		printf("%i, ", x);
+		if (x > 98)
+			x--;
 		else
-			xv++;
+			x++;
 	}
 	printf("98\n");
 }
