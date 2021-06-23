@@ -14,17 +14,19 @@ for (i = '0'; i <= '9'; i++)
 {
 	for (x = '0'; x <= '9'; x++)
 	{
+		if (x == 0)
+		{
 		_putchar('0');
 		_putchar(',');
 		_putchar(' ');
 		_putchar(' ');
-		_putchar('\n');
-	if ((i * x) <= 81)
+		}
+		else if ((i * x) <= 9)
 	{
-		_putchar((i * x) + '0');
 		_putchar(',');
 		_putchar(' ');
-		_putchar('\n');
+		_putchar(' ');
+		_putchar((i * x) + '0');
 	}
 
 }
