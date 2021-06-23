@@ -23,7 +23,7 @@ for (i = '0'; i <= '9'; i++)
 		}
 		else if ((i * x) <= 9)
 	{
-		_putchar((i * x) / 10 + '0');
+		_putchar((i * x) /10 + '0');
 		_putchar((i * x) %10 + '0');
 		_putchar(',');
 		_putchar(' ');
