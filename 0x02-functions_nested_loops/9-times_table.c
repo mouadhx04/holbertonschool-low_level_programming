@@ -19,9 +19,9 @@ for (i = '0'; i <= '9'; i++)
 		_putchar(' ');
 		_putchar(' ');
 		_putchar('\n');
-	if ((x * x) <= 81)
+	if ((i * x) <= 81)
 	{
-		_putchar((x * x) + '0');
+		_putchar((i * x) + '0');
 		_putchar(',');
 		_putchar(' ');
 		_putchar('\n');
