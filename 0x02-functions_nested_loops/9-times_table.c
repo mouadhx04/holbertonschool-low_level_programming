@@ -28,4 +28,5 @@ for (x = '0'; x <= '9'; x++)
 		_putchar('\n');
 	}
 }
+return (0);
 }
