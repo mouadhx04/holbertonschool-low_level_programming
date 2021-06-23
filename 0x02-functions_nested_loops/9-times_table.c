@@ -7,12 +7,25 @@
  */
 void times_table(void)
 {
-	int i;
+int i;
+int x;
 
-	for (i = '0'; i >= '9'; i++)
-	{
-		_putchar(i + i + '0');
+for (i = '0'; i <= '9'; i++)
+{
+		_putchar('0');
 		_putchar(',');
+		_putchar(' ');
+		_putchar(' ');
+		_putchar('\n');
+}
+for (x = '0'; x <= '9'; x++)
+{
+	if ((x * x) <= 81)
+	{
+		_putchar((x * x) + '0');
+		_putchar(',');
+		_putchar(' ');
+		_putchar('\n');
 	}
-	return (0);
+}
 }
