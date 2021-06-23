@@ -18,7 +18,7 @@ else
 largest = b;
 
 if (c > largest)
-largest=c;
+largest = c;
 
 return (largest);
 }
