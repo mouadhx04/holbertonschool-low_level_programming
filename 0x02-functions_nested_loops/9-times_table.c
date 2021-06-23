@@ -21,12 +21,12 @@ for (i = '0'; i <= '9'; i++)
 		_putchar(' ');
 		_putchar(' ');
 		}
-		else if ((i * x) <= 9)
+		else
 	{
+		_putchar((i * x) + '0');
 		_putchar(',');
 		_putchar(' ');
 		_putchar(' ');
-		_putchar((i * x) + '0');
 	}
 
 }
