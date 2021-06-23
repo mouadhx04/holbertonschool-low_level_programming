@@ -6,15 +6,15 @@
  *
  * Return: nothing
  */
-void print_to_98(int n)
+void print_to_98(int xv)
 {
-	while (n != 98)
+	while (xv != 98)
 	{
-		printf("%i, ", n);
-		if (n > 98)
-			n--;
+		printf("%i, ", xv);
+		if (xv > 98)
+			xv--;
 		else
-			n++;
+			xv++;
 	}
 	printf("98\n");
 }
