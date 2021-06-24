@@ -10,13 +10,13 @@ int i;
 for (i = 1; i <= 100; i++)
 {
 if (((i % 3) || (i % 5)) == 0)
-printf("number= %d FizzBuzz\n", i);
+printf("FizzBuzz");
 else if ((i % 3) == 0)
-printf("number= %d Fizz\n", i);
+printf("Fizz");
 else if ((i % 5) == 0)
-printf("number= %d Buzz\n", i);
+printf("Buzz");
 else
-printf("number= %d\n", i);
+printf("%d", i);
 }
 return (0);
 }
