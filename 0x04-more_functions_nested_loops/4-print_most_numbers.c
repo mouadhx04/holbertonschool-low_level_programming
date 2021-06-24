@@ -6,7 +6,7 @@
  *
  * Return: 0 (success)
  */
-void print_most_numbers(void)
+vvoid print_most_numbers(void)
 {
 int i;
 
