@@ -3,12 +3,9 @@
  * mul - multiplies two integers
  *@a: The character to multiplie
  *@b: the character to multilpie
- * Return: 0 (success)
+ * Return: a * b
  */
 int mul(int a, int b)
 {
-int x;
-	if (a != '0' && b != '0')
-		x = a * b;
-		return (x);
+		return (a * b);
 }
