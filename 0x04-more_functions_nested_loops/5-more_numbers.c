@@ -18,6 +18,6 @@ int j;
 			_putchar((num / 10) + '0');
 			_putchar((j % 10) + '0');
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
