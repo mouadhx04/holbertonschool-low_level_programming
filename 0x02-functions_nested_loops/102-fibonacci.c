@@ -18,5 +18,6 @@ int main(void)
 		y = s;
 		s = x + y;
 	}
+	printf("\n");
 	return (0);
 }
