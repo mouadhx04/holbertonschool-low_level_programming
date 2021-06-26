@@ -14,11 +14,13 @@ int main(void)
 	for (i = 3; i < 53; ++i)
 	{
 		printf("%d", s);
-		printf(",");
-		printf(" ");
 		x = y;
 		y = s;
 		s = x + y;
+		if (i < 52)
+		{
+			printf(",");
+			printf(" ");
 	}
 	printf("\n");
 	return (0);
