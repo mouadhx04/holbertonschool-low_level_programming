@@ -14,13 +14,13 @@ int main(void)
 	{
 		if ((i % 3) == 0)
 		{
-			x == (x + i);
+			x == x + i;
 		}
 		else if ((i % 5) == 0)
 		{
-			y == (y + i);
+			y == y + i;
 		}
-		s == (x + )y;
+		s == x + y;
 	}
 	printf("somme multiples of 3 and 5 is %d\n", s);
 	printf("\n");
