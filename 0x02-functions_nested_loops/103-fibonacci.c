@@ -12,7 +12,7 @@ int main(void)
 	int s = x + y;
 	int sum;
 
-	for (i = 3; i < 53; i++)
+	for (i = 3; i < 43; i++)
 	{
 		x = y;
 		y = s;
