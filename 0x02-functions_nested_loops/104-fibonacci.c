@@ -17,10 +17,7 @@ int main(void)
 		x = y;
 		y = s;
 		s = x + y;
-		while ((s / 10) >= 0)
-			fdigit = s / 10;
-		if ((fdigit == 1) || (fdigit == 2))
-			printf("%d", s);
+		printf("%d", s);
 		printf(",");
 		printf(" ");
 	}
