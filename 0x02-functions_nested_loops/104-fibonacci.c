@@ -10,16 +10,18 @@ int main(void)
 	int y = 1;
 	int i;
 	int s = x + y;
-	int fdigit;
 
 	for (i = 3; i < 98; i++)
 	{
+		printf("%d", s);
 		x = y;
 		y = s;
 		s = x + y;
-		printf("%d", s);
-		printf(",");
-		printf(" ");
+		if (i < 97)
+		{
+			printf(",");
+			printf(" ");
+		}
 	}
 	printf("\n");
 	return (0);
