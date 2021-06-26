@@ -13,10 +13,10 @@ int main(void)
 
 	for (i = 3; i < 53; i++)
 	{
+		printf("%d", s);
 		x = y;
 		y = s;
 		s = x + y;
-		printf("%d", s);
 		if (i < 52)
 		{
 			printf(",");
