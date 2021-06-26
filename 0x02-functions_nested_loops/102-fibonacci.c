@@ -14,7 +14,7 @@ int main(void)
 	{
 		s = x + y;
 	}
-	for (i = 3; i <= n; i++)
+	for (i = 3; i <= 50; i++)
 	{
 		printf("%d", x);
 		printf("%d", y);
