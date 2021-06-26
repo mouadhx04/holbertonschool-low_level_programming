@@ -12,7 +12,7 @@ int main(void)
 	int s = x + y;
 	int fdigit;
 
-	for (i = 3; i < 35; i++)
+	for (i = 3; i < 98; i++)
 	{
 		x = y;
 		y = s;
