@@ -17,7 +17,7 @@ int main(void)
 		x = y;
 		y = s;
 		s = x + y;
-		if ((s % 10) == 0)
+		if ((s % 2) == 0)
 			sum = sum + s;
 	}
 	printf("%d", sum);
