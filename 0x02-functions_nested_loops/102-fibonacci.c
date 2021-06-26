@@ -8,14 +8,19 @@ int main(void)
 {
 	int x = 0;
 	int y = 1;
-	int s;
+	int s, i;
 
 	while (s < 50)
 	{
 		s = x + y;
-	printf("%d", s);
-	printf(",");
-	printf(" ");
+	}
+	for (i = 3; i <= n; i++)
+	{
+		printf("%d", x);
+		printf("%d", y);
+		printf("%d", s);
+		printf(",");
+		printf(" ");
 	}
 	return (0);
 }
