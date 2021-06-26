@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - prints sum even terms for first 32 Fibonacci
+ * main - prints sum even terms of Fibonacci sequence
  *
  * Return: Always 0 (Success)
  */
@@ -12,7 +12,7 @@ int main(void)
 	int s = x + y;
 	int sum;
 
-	for (i = 3; i < 32; i++)
+	for (i = 3; i < 53; i++)
 	{
 		x = y;
 		y = s;
