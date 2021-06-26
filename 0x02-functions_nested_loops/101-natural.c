@@ -1,9 +1,8 @@
 #include <stdio.h>
 /**
- *main - prints sum of multiples of 3 and 5
- *@i: varaiable counter
- *@x: variable for sum multiples
- *return: always 0 (success)
+ * main - prints sum of multiples of 3 and 5
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -14,7 +13,7 @@ int main(void)
 		if (((i % 3) == 0) || ((i % 5) == 0))
 			x = x + i;
 	}
-	printf("somme multiples of 3 and 5 is %d\n", x);
+	printf("%d\n", x);
 	printf("\n");
 	return (0);
 }
