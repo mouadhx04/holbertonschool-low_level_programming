@@ -12,7 +12,7 @@ int main(void)
 	for (i = 0; i < 1024; i++)
 	{
 		if (((i % 3) == 0) || ((i % 5) == 0))
-			x == x + i;
+			x = x + i;
 	}
 	printf("somme multiples of 3 and 5 is %d\n", x);
 	printf("\n");
