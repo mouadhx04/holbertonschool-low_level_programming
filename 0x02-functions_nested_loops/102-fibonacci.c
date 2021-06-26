@@ -9,14 +9,14 @@ int main(void)
 	int x = 0;
 	int y = 1;
 	int i;
-	int s = x + y;
+	int s;
 
-	for (i = 3; i < 53; ++i)
+	for (i = 3; i < 53; i++)
 	{
-		printf("%d", s);
 		x = y;
 		y = s;
 		s = x + y;
+		printf("%d", s);
 		if (i < 52)
 		{
 			printf(",");
