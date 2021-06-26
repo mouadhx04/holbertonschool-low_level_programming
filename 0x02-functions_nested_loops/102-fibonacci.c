@@ -1,3 +1,4 @@
+  
 #include <stdio.h>
 /**
  * main - prints the first 50 Fibonacci numbers
@@ -9,9 +10,9 @@ int main(void)
 	int x = 0;
 	int y = 1;
 	int i;
-	int s;
+	int s = x + y;
 
-	for (i = 3; i < 53; i++)
+	for (i = 3; i < 53; ++i)
 	{
 		printf("%d", s);
 		x = y;
