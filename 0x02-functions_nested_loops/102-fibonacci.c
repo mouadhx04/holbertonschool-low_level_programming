@@ -9,11 +9,8 @@ int main(void)
 	int x = 0;
 	int y = 1;
 	int s, i;
+	int s = x + y;
 
-	while (s < 50)
-	{
-		s = x + y;
-	}
 	for (i = 3; i <= 50; i++)
 	{
 		x = y;
