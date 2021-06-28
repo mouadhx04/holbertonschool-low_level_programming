@@ -5,8 +5,10 @@ int _strlen(char *s)
  *@s: is a pointer to char
  *
  */
+void puts2(char *str)
 {
 	int i;
+	i
 	int x = _strlen(str);
 
 	for (i = 0; i < x; i += 2)
