@@ -2,7 +2,7 @@
 int _strlen(char *s);
 /**
  *puts2 - prints every other character of a string
- *@s: is a pointer to char
+ *@str: is a pointer to char and the parameter
  *
  */
 void puts2(char *str)
