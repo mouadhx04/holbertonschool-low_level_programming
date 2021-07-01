@@ -17,10 +17,8 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	while (n--)
 	{
-		if (!(*dest++ = *s2++))
-		{
+		if (!(*dest++ == *s2++))
 			return (dest);
-		}
 	}
 	*dest = '\0';
 	return (dest);
