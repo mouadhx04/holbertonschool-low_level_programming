@@ -19,3 +19,16 @@ char *cap_string(char *str)
 			{
 				str[0] = str[0] - 32;
 			}
+			else
+			{
+				for (j = 0; j < 13; j++)
+				{
+					if (str[i - 1] == ch[j])
+						str[i] = str[i] - 32;
+				}
+			}
+		}
+		i++;
+	}
+	return (str);
+}
