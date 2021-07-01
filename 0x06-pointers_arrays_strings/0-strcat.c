@@ -18,5 +18,5 @@ char *_strcat(char *dest, char *src)
 		a++;
 	}
 	*dest = '\0';
-	return (dest);
+	return (*dest);
 }
