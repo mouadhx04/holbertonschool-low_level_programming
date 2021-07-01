@@ -7,19 +7,11 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	char a = *dest;
-	char b = *src;
+	char *dest = str1;
+	char *src = str2;
 
-	while (*dest)
-	{
-		a++;
-	}
-	while (*src)
-	{
-		*dest = *src;
-		b++;
-		a++;
-	}
+	while(*(++dest));
+	while(*(dest) = *(src));
 	*dest = '\0';
 	return (dest);
 }
