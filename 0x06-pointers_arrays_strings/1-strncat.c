@@ -1,4 +1,3 @@
-  
 #include "holberton.h"
 /**
  *_strcat - concatenates two strings
@@ -7,9 +6,9 @@
  *@n: most bytes from src
  *Return: dest (Success)
  */
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
-	int c, d, n;
+	int c, d;
 
 	c = 0;
 	while (dest[c] != '\0')
