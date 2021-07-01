@@ -9,8 +9,11 @@ char *_strcat(char *dest, char *src)
 {
 	char a = *dest;
 	char b = *src;
+
 	while (*dest)
+	{
 		a++;
+	}
 	while (*src)
 	{
 		*dest = *src;
@@ -18,5 +21,5 @@ char *_strcat(char *dest, char *src)
 		a++;
 	}
 	*dest = '\0';
-	return (a);
+	return (dest);
 }
