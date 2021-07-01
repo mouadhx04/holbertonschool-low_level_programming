@@ -8,12 +8,12 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	while (*source && num--)
+	while (*src && n--)
 	{
-		*destination = *source;
-		destination++;
-		source++;
+		*dest = *src;
+		dest++;
+		src++;
 	}
-	*destination = '\0';
+	*dest = '\0';
 }
 
