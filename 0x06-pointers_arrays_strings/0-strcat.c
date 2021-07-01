@@ -1,15 +1,15 @@
 #include "holberton.h"
 /**
- *_strncat - concatenates two strings
+ *_strcat - concatenates two strings
  *@dest: char pointer
- *@src: char pointer 
- *
+ *@src: char pointer
+ *Return: dest (Success)
  */
 char *_strcat(char *dest, char *src)
 {
-	while(*dest)
+	while (*dest)
 		dest++;
-	while(*src)
+	while (*src)
 	{
 		*dest = *src;
 		src++;
