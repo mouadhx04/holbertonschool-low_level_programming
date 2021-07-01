@@ -3,7 +3,7 @@
  *_strcat - concatenates two strings
  *@dest: char pointer
  *@src: char pointer
- *@n: most bytes from src
+ *@n: number of bytes from src
  *Return: dest (Success)
  */
 char *_strncat(char *dest, char *src, int n)
@@ -16,7 +16,7 @@ char *_strncat(char *dest, char *src, int n)
 		c++;
 	}
 	d = 0;
-	while (src[d] <= n)
+	while (src[d] < n)
 	{
 		dest[c] = src[d];
 		d++;
