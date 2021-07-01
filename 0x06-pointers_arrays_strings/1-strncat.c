@@ -15,11 +15,10 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		c++;
 	}
-	while (n--)
+	for (d = 0; src[d] && d < n; d++)
 	{
-		if (!(*dest++ == *s2++))
-			return (dest);
+		dest[c++] = src[d];
 	}
-	*dest = '\0';
+	dest[c] = '\0';
 	return (dest);
 }
