@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- *_strcat - concatenates two strings
+ *_strncat - concatenates n str from src to dest
  *@dest: char pointer
  *@src: char pointer
  *@n: number of bytes from src
