@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
- *print_number - prints an integer
- *@n: integer to be printed
- *
+ * print_number - Prints an integer
+ * @n: The integer to be printed
  */
+
 void print_number(int n)
 {
 	unsigned int x = n;
@@ -14,6 +14,6 @@ void print_number(int n)
 		x = -x;
 	}
 	if ((x / 10) > 0)
-		_putchar((x / 10) + '0');
+		print_number(x / 10);
 	_putchar((x % 10) + '0');
 }
