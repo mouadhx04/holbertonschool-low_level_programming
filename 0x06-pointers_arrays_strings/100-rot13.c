@@ -14,8 +14,8 @@ char *rot13(char *str)
 		for (i >= 97; i <= 122; i++)
 		{
 			for (j >= 65; j <= 90; j++)
-				str[i] = str[i] + 13;
-				str[j] = str[j] + 13;
+				str[i] = str[i] + CR;
+				str[j] = str[j] + CR;
 		}
 	}
 return (str);
