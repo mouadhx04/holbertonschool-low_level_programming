@@ -5,38 +5,32 @@ int _strlen(char *s);
  *@haystack: pointer on a string
  *@needle: pointer on a substring
  *
- * Return: 1 (success), 0 (otherwize)
+ * Return: a pointer or 0
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int currentMatch = 0;
+	int i;
 
-	size_t hay_len = _strlen(haystack);
-	size_t nee_len = _strlen(needle);
+	if (*needle == 0)
+		return (haystack);
 
-	for (int i = 0; i < hay_len; i++)
+	while (*haystack)
 	{
-		if (haystack[i] == needle[currentMatch])
+		i = 0;
+
+		if (haystack[i] == needle[i])
 		{
-			if (++currentMatch == nee_len)
-				return (i - currentMatch);
+			do {
+				if (needle[i + 1] == '\0')
+					return (haystack);
+
+				i++;
+
+			} while (haystack[i] == needle[i]);
 		}
-		else
-			currentMatch = 0;
+
+		haystack++;
 	}
-}
 
-#include "holberton.h"
-/**
- *_strlen - returns the length of a string
- *@s: is a pointer to char
- *Return: len (Success)
- */
-int _strlen(char *s)
-{
-	int len = 0;
-
-	while (*s++)
-		len++;
-	return (len);
+	return ('\0');
 }
