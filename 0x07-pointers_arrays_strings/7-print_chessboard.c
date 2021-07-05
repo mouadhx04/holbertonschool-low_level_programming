@@ -2,8 +2,7 @@
 /**
  *print_chessboard - prints the chessboard
  *
- *@a: pointer on a array of 8 size
- *
+ *@a: be printed like chessboard
  */
 void print_chessboard(char (*a)[8])
 {
