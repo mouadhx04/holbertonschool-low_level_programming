@@ -1,8 +1,8 @@
 #include "holberton.h"
+
 /**
- *print_chessboard - prints the chessboard
- *
- *@a: be printed like chessboard
+ * print_chessboard - Prints a chessboard.
+ * @a: Be printed like a chessboard.
  */
 void print_chessboard(char (*a)[8])
 {
