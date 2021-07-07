@@ -19,7 +19,7 @@ int _pow_recursion(int x, int y)
 	}
 	else if (x < 0)
 	{
-		return ();
+		return (_pow_recursion(x * -1, y - 1));;
 	}
 	else
 		return (_pow_recursion(x, y - 1));
