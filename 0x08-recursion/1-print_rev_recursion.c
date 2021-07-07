@@ -6,7 +6,7 @@
 * @s: string to be printed in reverse
 *
 */
-void _puts_recursion(char *s)
+void _print_rev_recursion(char *s)
 {
 	s--;
 	if (*s == 0)
