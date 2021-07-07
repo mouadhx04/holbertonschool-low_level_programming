@@ -18,5 +18,5 @@ int _pow_recursion(int x, int y)
 		return (x * y);
 	}
 	else
-		return (factorial(x * (y- 1)));
+		return (_pow_recursion(x * (y - 1)));
 }
