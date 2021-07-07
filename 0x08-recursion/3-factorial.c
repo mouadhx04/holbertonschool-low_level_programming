@@ -13,5 +13,5 @@ int factorial(int n)
 		return (-1);
 	}
 	else
-	return (n + _strlen_recursion(s + 1));
+	return (n + _strlen_recursion(n + 1));
 }
