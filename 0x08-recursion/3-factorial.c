@@ -17,5 +17,5 @@ int factorial(int n)
 		return (1);
 	}
 	else
-	return ((n % 10) * factorial(n / 10));
+	return (n * factorial(n - 1));
 }
