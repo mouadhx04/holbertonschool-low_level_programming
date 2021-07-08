@@ -1,23 +1,23 @@
 #include "holberton.h"
 
-int strlen(char *s);
+int _strlen(char *s);
 int check_palindrome(char *s, int len, int i);
 int is_palindrome(char *s);
 
 /**
- * strlen - Returns the length of a string.
+ * _strlen - Returns the length of a string.
  * @s: The string to be measured.
  *
  * Return: The length of the string.
  */
-int strlen(char *s)
+int _strlen(char *s)
 {
 	int len = 0;
 
 	if (*(s + len))
 	{
 		len++;
-		len += strlen(s + len);
+		len += _strlen(s + len);
 	}
 
 	return (len);
@@ -53,7 +53,7 @@ int check_palindrome(char *s, int len, int i)
 int is_palindrome(char *s)
 {
 	int i = 0;
-	int len = strlen(s);
+	int len = _strlen(s);
 
 	if (!(*s))
 		return (1);
