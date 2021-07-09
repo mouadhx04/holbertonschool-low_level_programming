@@ -9,25 +9,30 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, add = 0;
+	int n, j, x, add = 0;
 
 	if (argc == 0)
-	{
 		printf("0\n");
-	}
-	else if (isdigit(argc) == 0)
+
+	else if (argc > 0)
 	{
-		printf("Error\n");
-		return (1);
+		for (x = 1; x < argc; x++)
+		{
+			for (j = 0; j < argc; j++)
+			{
+				if (argv[x][j] < '0' || argv[x][j] > '9')
+					printf("Error\n");
+				return (1);
+			}
+		}
 	}
 	else
 	{
-		for (i = 1; i < argc; i++)
+		for (n = 1; n < argc; n++)
 		{
-		add += atoi(argv[i]);
+			add += atoi(argv[n]);
 		}
 		printf("%d\n", add);
 		return (0);
 	}
 }
-
