@@ -7,13 +7,18 @@ int _atoi(char *s);
  * main - print the name of the program
  * @argc: The number of command line arguments in argv array
  * @argv: An array containing the program command line arguments
- * Return: 0 (Success)
+ * Return: 1 error 0 (Success)
  */
 int main(int argc, char *argv[])
 {
 	int i, mul = 1;
 
-	if (argc > 1)
+	if (argc != 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	else
 	{
 	for (i = 1; i < argc; i++)
 	{
@@ -22,9 +27,6 @@ int main(int argc, char *argv[])
 	printf("%d\n", mul);
 	return (0);
 	}
-	else if (argc != 2)
-		printf("Error\n");
-		return (1);
 }
 /**
  * _atoi - convert a string to an integer
