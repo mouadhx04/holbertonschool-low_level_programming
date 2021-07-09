@@ -1,4 +1,4 @@
-oncepts
+Concepts
 For this project, students are expected to look at this concept:
 
 C static libraries
