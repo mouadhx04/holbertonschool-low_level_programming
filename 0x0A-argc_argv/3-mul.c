@@ -20,12 +20,11 @@ int main(int argc, char *argv[])
 	mul = mul * _atoi(argv[i]);
 	}
 	printf("%d\n", mul);
-	}
-	else if (argc == 0)
-	{
-		printf("Error\n");
-	}
 	return (0);
+	}
+	else if (argc != 2)
+		printf("Error\n");
+		return (1);
 }
 /**
  * _atoi - convert a string to an integer
