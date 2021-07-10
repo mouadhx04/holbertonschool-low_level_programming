@@ -10,26 +10,25 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, cents;
+	int cents;
 
-	if (argc != 1)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	i = 1;
-	if (atoi(argv[i]) < 0)
+	else if (atoi(argv[1]) < 0)
 	{
 		printf("0\n");
 	}
-	else if (atoi(argv[i]) >= 25)
+	else if (atoi(argv[1]) >= 25)
 	{
-		cents = (atoi(argv[i]) / 25) + (atoi(argv[i]) % 25);
+		cents = (atoi(argv[1]) / 25) + (atoi(argv[1]) % 25);
 		printf("%d\n", cents);
 	}
-	else if (atoi(argv[i]) >= 10)
+	else if (atoi(argv[1]) >= 10)
 	{
-		cents = (atoi(argv[i]) / 10) + (atoi(argv[i]) % 10);
+		cents = (atoi(argv[1]) / 10) + (atoi(argv[1]) % 10);
 		printf("%d\n", cents);
 	}
 	return (0);
