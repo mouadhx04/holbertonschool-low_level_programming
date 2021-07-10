@@ -11,13 +11,13 @@ int main(void)
 	int i;
 	long int s = x + y;
 
-	for (i = 3; i < 102; i++)
+	for (i = 0; i < 98; i++)
 	{
 		printf("%ld", s);
 		x = y;
 		y = s;
 		s = x + y;
-		if (i < 101)
+		if (i < 97)
 		{
 			printf(",");
 			printf(" ");
