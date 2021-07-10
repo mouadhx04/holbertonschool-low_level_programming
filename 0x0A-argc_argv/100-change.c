@@ -26,9 +26,14 @@ int main(int argc, char *argv[])
 		cents = (atoi(argv[1]) / 25) + (atoi(argv[1]) % 25);
 		printf("%d\n", cents);
 	}
-	else if (atoi(argv[1]) >= 10)
+	else if (atoi(argv[1]) == 10)
 	{
-		cents = (atoi(argv[1]) / 10) + (atoi(argv[1]) % 10);
+		cents = (atoi(argv[1]) / 10);
+		printf("%d\n", cents);
+	}
+	else if (atoi(argv[1]) > 10)
+	{
+		cents = (atoi(argv[1]) % 10);
 		printf("%d\n", cents);
 	}
 	return (0);
