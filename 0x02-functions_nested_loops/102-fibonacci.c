@@ -13,7 +13,7 @@ int main(void)
 
 	for (i = 3; i < 53; ++i)
 	{
-		printf("%d", s);
+		printf("%ld", s);
 		x = y;
 		y = s;
 		s = x + y;
