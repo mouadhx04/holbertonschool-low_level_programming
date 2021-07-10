@@ -6,14 +6,14 @@
  */
 int main(void)
 {
-	int x = 0;
-	int y = 1;
+	long int x = 0;
+	long int y = 1;
 	int i;
-	int s = x + y;
+	long int s = x + y;
 
 	for (i = 3; i < 98; i++)
 	{
-		printf("%d", s);
+		printf("%ld", s);
 		x = y;
 		y = s;
 		s = x + y;
