@@ -11,24 +11,35 @@
  */
 char *_strdup(char *str)
 {
-	unsigned int i;
+	unsigned int i, j, len = 0;
 	char *p;
 
-	if (str == 0)
+	if (str == NULL)
+	{
 		return (0);
+	}
+	else
+	{
+		while (*str++)
+			len++;
+	}
 
-	p = (char *)malloc(sizeof(char));
+	p = (char *)malloc(len * sizeof(char));
 	if (p == NULL)
 	{
 		return (0);
 	}
 	else
 	{
-		i = 0;
-		while (i != '\0')
+		for (i = 0; str[i] != '\0'; i++)
 		{
-			p[i] = str [i];
-			i++;
+			continue;
+		}
+		j = 0;
+		while(j <= i)
+		{
+			p[j] = str[j];
+			j++;
 		}
 		free(p);
 	}
