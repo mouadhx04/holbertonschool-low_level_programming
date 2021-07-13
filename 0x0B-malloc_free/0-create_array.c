@@ -19,5 +19,5 @@ char *create_array(unsigned int size, char c)
 	p = (char *)malloc(size * sizeof(char));
 
 	printf("%s", p);
-	return (p + 0);
+	return (p);
 }
