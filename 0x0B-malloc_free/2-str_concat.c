@@ -26,20 +26,18 @@ char *str_concat(char *s1, char *s2)
 	}
 	else
 	{
-	c = 0;
-	while (s1[c] != '\0')
+	for (c = 0; s1[c]; c++)
 	{
 		c++;
 	}
-	d = 0;
-	while (s2[d] != '\0')
+	for (d = 0; s2[d]; d++)
 	{
 		s1[c] = s2[d];
 		d++;
 		c++;
 	}
-	for (i = 0; i <= len; i++)
-		k[i] = s1[c];
+	for (i = 0; s1[i]; i++)
+		k[i] = s1[i];
 	}
 	return (k);
 }
