@@ -11,6 +11,7 @@
  */
 char *_strdup(char *str)
 {
+	unsigned int i;
 	char *p;
 
 	if (str == 0)
@@ -23,7 +24,12 @@ char *_strdup(char *str)
 	}
 	else
 	{
-		p = strdup(str);
+		i = 0;
+		while (i != '\0')
+		{
+			p[i] = str [i];
+			i++;
+		}
 		free(p);
 	}
 	return (p);
