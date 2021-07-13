@@ -9,12 +9,12 @@
  * @c: char in array
  * Return: integer or 0 (Success)
  */
-char *create_array(unsigned int size, char c)
+char *create_array(unsigned int size, __attribute__((unused)) char c)
 {
 	int *x;
 	if (size == 0)
 		return (0);
 	else
 	x = (int*)malloc(size * sizeof(char));
-	return (x);
+	return (x + 0);
 }
