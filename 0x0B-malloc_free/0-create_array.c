@@ -9,7 +9,7 @@
  * @c: char in array
  * Return: 1 or 0 (Success)
  */
-char *create_array(unsigned int size, __attribute__((unused))  char c)
+char *create_array(unsigned int size, __attribute__((unused)) char c)
 {
 	char *p;
 
@@ -19,5 +19,5 @@ char *create_array(unsigned int size, __attribute__((unused))  char c)
 	p = malloc(size * sizeof(char));
 
 	printf("%s\n", p);
-	return (0);
+	return (p + 0);
 }
