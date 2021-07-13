@@ -1,7 +1,6 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 /**
  * _strdup - returns a pointer to a newly allocated space in memory,
@@ -20,7 +19,7 @@ char *_strdup(char *str)
 	}
 	else
 	{
-		while (*str++)
+		while (*str != '\0')
 			len++;
 	}
 
