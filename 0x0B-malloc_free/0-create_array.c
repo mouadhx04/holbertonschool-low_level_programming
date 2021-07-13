@@ -19,5 +19,5 @@ char *create_array(unsigned int size, __attribute__((unused)) char c)
 	p  = malloc(size * sizeof(char));
 	p[0] = 'c';
 	printf("%s\n", p);
-	return (1);
+	return (p);
 }
