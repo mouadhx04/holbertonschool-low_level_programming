@@ -7,7 +7,7 @@
  * and initializes it with a specific char.
  * @size: size of memory allocation
  * @c: char in array
- * Return: integer or 0 (Success)
+ * Return: 1 or 0 (Success)
  */
 char *create_array(unsigned int size, __attribute__((unused)) char c)
 {
@@ -19,4 +19,5 @@ char *create_array(unsigned int size, __attribute__((unused)) char c)
 	p  = malloc(size * sizeof(char));
 	p[0] = 'c';
 	printf("%s\n", p);
+	return (1);
 }
