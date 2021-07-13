@@ -17,7 +17,7 @@ char *create_array(unsigned int size, __attribute__((unused)) char c)
 		return (0);
 
 	p  = malloc(size * sizeof(char));
-	p[0] = 'c';
-	printf("%s\n", p);
+	for (i = 0; i < size; ++i)
+	printf("%s\n", p[i]);
 	return (p);
 }
