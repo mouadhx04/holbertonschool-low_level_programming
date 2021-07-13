@@ -10,7 +10,7 @@
  */
 char *_strdup(char *str)
 {
-	unsigned int i, len = 0;
+	unsigned int i, len;
 	char *p;
 
 	if (str == NULL)
@@ -24,7 +24,7 @@ char *_strdup(char *str)
 			len++;
 	}
 
-	p = malloc(sizeof(char) * (len + 1));
+	p = malloc(sizeof(char) * (len));
 	if (p == NULL)
 	{
 		return (0);
