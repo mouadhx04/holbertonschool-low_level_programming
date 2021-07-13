@@ -9,7 +9,7 @@
  * @c: char in array
  * Return: 1 or 0 (Success)
  */
-char *create_array(unsigned int size, char c)
+char *create_array(unsigned int size, __attribute__((unused))  char c)
 {
 	char *p;
 
