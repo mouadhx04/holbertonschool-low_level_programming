@@ -18,7 +18,7 @@ char *_strdup(char *str)
 		return (0);
 	}
 	else
-		len = 0;
+		len = 1;
 	{
 		while (*str++)
 			len++;
