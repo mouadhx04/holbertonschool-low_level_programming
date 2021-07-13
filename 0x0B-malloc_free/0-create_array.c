@@ -11,11 +11,9 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	char *p = 0;
-
 	if (size == 0)
 		return (0);
 
-	p = malloc(size * sizeof(char));
-	return (p);
+	c = malloc(size * sizeof(char));
+	printf("%s\n", c);
 }
