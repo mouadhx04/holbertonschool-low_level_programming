@@ -11,6 +11,7 @@
  */
 char *create_array(unsigned int size, __attribute__((unused)) char c)
 {
+	int i;
 	char *p;
 
 	if (size == 0)
