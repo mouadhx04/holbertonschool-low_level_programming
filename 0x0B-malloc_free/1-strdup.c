@@ -24,24 +24,18 @@ char *_strdup(char *str)
 			len++;
 	}
 
-	p = (char *)malloc(len * sizeof(char));
+	p = malloc(sizeof(char) * (len + 1));
 	if (p == NULL)
 	{
 		return (0);
 	}
 	else
 	{
-		for (i = 0; i <= len; i++)
+		for (i = 0; str[i]; i++)
 		{
-			continue;
+			p[i] = str[i];
 		}
-		j = 0;
-		while (j <= i)
-		{
-			p[j] = str[j];
-			j++;
-		}
-		free(p);
+		p[len] = '\0';
 	}
 	return (p);
 }
