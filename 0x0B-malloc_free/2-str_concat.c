@@ -13,7 +13,7 @@ char *str_concat(char *s1, char *s2)
 	unsigned int i, c, d, len = 0;
 	char *k;
 
-	if (str == NULL)
+	if (s1 == NULL || s2 == NULL)
 	{
 		return (NULL);
 	}
@@ -38,7 +38,7 @@ char *str_concat(char *s1, char *s2)
 		d++;
 		c++;
 	}
-	for (i = 0; i <= size; i++)
+	for (i = 0; i <= len; i++)
 		k[i] = s1[c];
 	}
 	return (k);
