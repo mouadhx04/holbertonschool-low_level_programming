@@ -1,6 +1,5 @@
 #include "holberton.h"
 #include <stdlib.h>
-#include <string.h>
 
 /**
  * string_nconcat - concatenates n from s2 source to s1 dest
@@ -35,7 +34,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-	for (i1 = 0; s1[i1] != '\0'; i1++)
+	for (i1 = 0; s1[i1]; i1++)
 		k[x++] = s1[i1];
 	for (j1 = i1; j1 < i1 + n; j1++)
 		k[x++] = s2[j1 - i1];
