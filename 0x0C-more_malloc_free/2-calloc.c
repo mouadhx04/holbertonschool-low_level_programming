@@ -21,10 +21,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
-	else
+	i = 0;
+	while (i < nmemb * size)
 	{
-		for (i = 0; i < nmemb * size; i++)
-			p[i] = '\0';
+		p[i] = 0;
+		i++;
 	}
 	return (p);
 }
