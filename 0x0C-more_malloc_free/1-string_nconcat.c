@@ -35,10 +35,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-	for (i1 = 0; s1[i1] != '\0'; i1++)
+	for (i1 = 0; s1[i1]; i1++)
 		k[i1] = s1[i1];
 	for (j1 = i; j1 < i + n; j1++)
-		k[j1] = s2[j1 - i];
-	s[j] = '\0';
+		k[j1] = s2[j1];
+	k[j] = '\0';
 	return (k);
 }
