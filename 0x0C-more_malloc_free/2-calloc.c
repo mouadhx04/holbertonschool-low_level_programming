@@ -1,6 +1,7 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * _calloc - allocates memory for an array of nmemb elements of size bytes
@@ -11,20 +12,20 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int i;
-	int *p;
+	char *p;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	p = malloc(size * sizeof(int));
+	p = malloc(size * nmemb);
 	if (p == NULL)
 	{
 		return (NULL);
 	}
 	else
 	{
-		for (i = 0; i <= size; i++)
-			p[i] = 0;
+		for (i = 0; i < size * nmemb; i++)
+			p[i] = '\0';
 	}
 	return (p);
 }
