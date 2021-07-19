@@ -3,29 +3,20 @@
 
 /**
  * print_dog - prints a struct dog
- * @d: struct tupe dog
+ * @d: struct type dog
  * Return: nothing
  */
 void print_dog(struct dog *d)
 {
 	if (d == NULL)
-		putchar('\0');
-	else if (d->name == NULL)
-	{
-		printf("Name: (nil)\n");
-		printf("Age: %.6f\n", d->age);
-		printf("Owner: %s\n", d->owner);
-	}
-	else if (d->owner == NULL)
-	{
-		printf("Name: %s\n", d->name);
-		printf("Age: %.6f\n", d->age);
-		printf("Owner: (nil)\n");
-	}
+	return;
+	if (d->name == NULL)
+	printf("Name: (nil)\n");
 	else
-	{
-		printf("Name: %s\n", d->name);
-		printf("Age: %.6f\n", d->age);
-		printf("Owner: %s\n", d->owner);
-	}
+	printf("Name: %s\n", d->name);
+	printf("Age: %.6f\n", d->age);
+	if (d->owner == NULL)
+	printf("Owner: (nil)\n");
+	else
+	printf("Owner: %s\n", d->owner);
 }
