@@ -6,10 +6,9 @@
  * @h: Pointer to next node.
  * Return: nodes number.
 **/
-
 size_t print_list(const list_t *h)
 {
-unsigned int i = 0;
+	unsigned int i = 0;
 
 	while (h != NULL)
 	{
@@ -21,6 +20,5 @@ unsigned int i = 0;
 		h = h->next;
 		i++;
 	}
-
-return (i);
+	return (i);
 }
