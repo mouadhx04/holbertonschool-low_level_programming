@@ -2,18 +2,15 @@
 #include <string.h>
 #include <stdio.h>
 #include "lists.h"
-
 /**
- * print_list - prints all the elements of a list_t list.
- *@h: a pointer.
- * Return: the number of nodes.
+ *print_list - print a list
+ *@h:pointer of type list_t;
+ *Return: count
  */
-
 size_t print_list(const list_t *h)
 {
-	size_t len;
+	size_t i = 0;
 
-	len = 0;
 	while (h != NULL)
 	{
 		if (h->str == NULL)
@@ -21,7 +18,7 @@ size_t print_list(const list_t *h)
 		else
 			printf("[%d] %s\n", h->len, h->str);
 		h = h->next;
-		len++;
+		i++;
 	}
-	return (len);
+	return (i);
 }
