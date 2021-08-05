@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "holberton.h"
+#include "main.h"
 /**
 * get_bit - function that returns the value of a bit at a given index
 * @n: the number
