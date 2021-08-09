@@ -1,4 +1,10 @@
 #include "holberton.h"
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <stdlib.h>
+#include <stddef.h>
+#include <unistd.h>
 
 /**
 * read_textfile - reads a text file and prints it to the POSIX standard output
