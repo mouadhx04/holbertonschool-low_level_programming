@@ -1,22 +1,28 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ *append_text_to_file - appends text at the end of a file.
+ *@filename: name of the file to create char.
+ *@text_content: content of file string.
+ *Return: 1 on success otherwise -1 on failure.
  */
-int main(int ac, char **av)
+int append_text_to_file(const char *filename, char *text_content)
 {
-    int res;
-
-    if (ac != 3)
-    {
-        dprintf(2, "Usage: %s filename text\n", av[0]);
-        exit(1);
-    }
-    res = append_text_to_file(av[1], av[2]);
-    printf("-> %i)\n", res);
-    return (0);
+	int fd, wr, len;
+	
+	if (filename == NULL)
+		return (-1);
+	fd = open(filename, O_RDWR | O_APPEND);
+	if (fd == -1)
+		return (-1);
+	if (text_content != NULL)
+	{
+		for (len = 0; text_content[len] != '\0'; len++)
+			continue;
+		wr = write(fd, text_content, len);
+		if (wr == -1)
+			return (-1);
+	}
+	close(fd);
+	return (1);
 }
