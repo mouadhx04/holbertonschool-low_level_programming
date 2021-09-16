@@ -22,7 +22,7 @@ Your code should use the Betty style. It will be checked using betty-style.pl an
 
 You are not allowed to use global variables
 
-No more than 5 functions per file
+No more than 5 functions per file.
 
 The only C standard library functions allowed are malloc, free, printf and exit
 
