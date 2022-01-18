@@ -1,5 +1,6 @@
-#ifndef SEARCH_ALROS_H
-#define SEARCH_ALROS_H
+#ifndef HEADER_FILE
+#define HEADER_FILE
+
 #include <stdio.h>
 #include <stdlib.h>
 
